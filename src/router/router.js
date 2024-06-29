@@ -5,6 +5,7 @@ const Home = lazy(() => import('../pages/Home/index'));
 const Login = lazy(() => import('../pages/Login/index'));
 const Register = lazy(() => import('../pages/Register/index'))
 const Query = lazy(() => import('../pages/Query/index'))
+const Search = lazy(() => import('../pages/Query/Search/index'))
 
 const Routes = [
     {
@@ -38,6 +39,14 @@ const Routes = [
             name: 'query'
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Query /></Suspense>
+    },
+    {
+        path: '/query/search',
+        meta: {
+            title: '查询',
+            name: 'search'
+        },
+        element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Search /></Suspense>
     }
 ]
 

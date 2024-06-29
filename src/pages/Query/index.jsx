@@ -1,11 +1,23 @@
 import React from "react";
 import Header from "../../components/Header";
-import { Input } from 'antd';
+import { Input, Button } from 'antd';
 import './index.css'
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
 
 function Query() {
+    const navigate = useNavigate();
+    const [search_value, setsearch_value] = useState();
     const { Search } = Input;
-    const onSearch = (value, _e, info) => console.log(info?.source, value);
+    const onSearch = (value, _e, info) => {
+        console.log(info?.source, value);
+        navigate('/query/search')
+    }
+    const addlabel = (name, e) => {
+        console.log(name);
+        setsearch_value(name);
+    }
     return (
         <>
             <Header></Header>
@@ -19,13 +31,29 @@ function Query() {
                 <div className="title">营养健康图谱查询</div>
                 <div className="words">菜品食材/烹饪方式/营养标签/功效贴士</div>
                 <Search
+                    id="search"
                     className="search"
-                    placeholder="请输入······"
+                    value={search_value}
+                    placeholder="请输入·······"
                     allowClear
                     enterButton="搜索"
                     size="large"
                     onSearch={onSearch}
                 />
+                <div className="buttons">
+                    <div>
+                        <span>人群查询:</span>
+                        <Button size="large" onClick={(e) => addlabel('高血压', e)}>高血压</Button>
+                        <Button size="large" onClick={(e) => addlabel('糖尿病', e)}>糖尿病</Button>
+                        <Button size="large" onClick={(e) => addlabel('孕妇', e)}>孕妇</Button>
+                    </div>
+                    <div>
+                        <span>营养查询:</span>
+                        <Button size="large" onClick={(e) => addlabel('低脂肪', e)}>低脂肪</Button>
+                        <Button size="large" onClick={(e) => addlabel('低胆固醇', e)}>低胆固醇</Button>
+                        <Button size="large" onClick={(e) => addlabel('低钠', e)}>低钠</Button>
+                    </div>
+                </div>
             </div>
         </>
     )
