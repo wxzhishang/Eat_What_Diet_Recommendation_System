@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, Button } from "antd";
 import { useNavigate } from "react-router-dom"
+import "./index.css"
 
 const items = [
     {
@@ -33,11 +34,11 @@ function Header() {
         navigate('/' + e.key)
     }
     return (
-        <div style={{ display: 'flex', backgroundColor: 'transparent' }}>
+        <div style={{ display: 'flex', backgroundColor: '#fff' }}>
             <div style={{ width: '40%', textAlign: 'center', height: '50px' }}>
-                <img src="http://sfs87naca.hn-bkt.clouddn.com/logo/logo-white.png" style={{ width: '80px', height: '60px' }} />
+                <img src="http://sfs87naca.hn-bkt.clouddn.com/logo/logo-white.png" style={{ width: '80px', height: '50px' }} />
             </div>
-            <Menu style={{ border: 'none', width: '40%' }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <Menu style={{ border: 'none', width: '30%', color: '#8ec63f' }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         </div>
     )
 }
