@@ -17,7 +17,7 @@
     border-color: white !important;
     border-style: solid !important;
     border-width: 2px !important;
-    position: relative;
+    position: absolute;
     left: 45%;
     top: 80%;
     background-color: transparent !important;
@@ -51,4 +51,13 @@
     100% {
         opacity: 1;
     }
+}
+
+.title {
+    margin-top: 20px;
+    color: #8ec63f;
+    position: relative;
+    left: 45%;
+    width: 10%;
+    text-align: center;
 }

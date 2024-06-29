@@ -91,7 +91,7 @@ function Search() {
     return (
         <>
             <Header></Header>
-            <div className="title">
+            <div className="search-title">
                 <Search
                     id="search"
                     className="search"
@@ -102,7 +102,7 @@ function Search() {
                     size="large"
                     onSearch={onSearch}
                 />
-                <div className="buttons">
+                <div className="search-buttons">
                     <div className="left">
                         <div>人群查询:</div>
                         <Button size="small" onClick={(e) => addlabel('高血压', e)}>高血压</Button>
@@ -117,7 +117,7 @@ function Search() {
                     </div>
                 </div>
             </div>
-            <div className="main">
+            <div className="search-main">
                 <div style={{ margin: '50px 0px 20px 0px' }}>搜索到以下结果</div>
                 <div className="dataList">
                     {

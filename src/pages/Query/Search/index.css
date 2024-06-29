@@ -1,42 +1,42 @@
-.title {
+.search-title {
     text-align: center;
     margin-top: 20px;
     background: #f5f5f6;
 }
 
-.title .search {
+.search-title .search {
     margin-top: 50px;
     width: 60%;
 }
 
-.buttons {
+.search-buttons {
     text-align: left;
     margin-left: 20%;
 }
 
-.buttons .left {
+.search-buttons .left {
     margin-top: 30px;
     display: inline-block;
     margin-right: 25px;
 }
 
-.buttons .right {
+.search-buttons .right {
     display: inline-block;
 }
 
-.buttons .left div {
+.search-buttons .left div {
     margin-right: 20px;
     font-size: large;
     font-weight: lighter;
 }
 
-.buttons .right div {
+.search-buttons .right div {
     margin-right: 20px;
     font-size: large;
     font-weight: lighter;
 }
 
-.buttons Button {
+.search-buttons Button {
     margin: 30px 30px 50px 0px;
     border-radius: 40px;
     width: 120px;
@@ -44,13 +44,13 @@
     background-color: #f5f5f5;
 }
 
-.main {
+.search-main {
     text-align: left;
     margin-left: 20%;
     width: 60%;
 }
 
-.main .dataList {
+.search-main .dataList {
     margin-top: 20px;
     border-radius: 10px;
     border-color: #f5f5f5;
@@ -58,7 +58,7 @@
 }
 
 
-.main .dataList span {
+.search-main .dataList span {
     font-size: 12px;
     margin-left: 20px;
     margin-right: 10px;

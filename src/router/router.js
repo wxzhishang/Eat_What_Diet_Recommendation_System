@@ -5,6 +5,7 @@ const Home = lazy(() => import('../pages/Home/index'));
 const Login = lazy(() => import('../pages/Login/index'));
 const Register = lazy(() => import('../pages/Register/index'))
 const Query = lazy(() => import('../pages/Query/index'))
+const Share = lazy(() => import('../pages/Share/index'))
 const Search = lazy(() => import('../pages/Query/Search/index'))
 
 const Routes = [
@@ -39,6 +40,14 @@ const Routes = [
             name: 'query'
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Query /></Suspense>
+    },
+    {
+        path: '/share',
+        meta: {
+            title: '世界频道',
+            name: 'share'
+        },
+        element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Share></Share></Suspense>
     },
     {
         path: '/query/search',
