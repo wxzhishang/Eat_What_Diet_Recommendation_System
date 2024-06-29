@@ -1,0 +1,54 @@
+.backGround {
+    background-image: url("http://sfs87naca.hn-bkt.clouddn.com/background/home-background.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    width: 140px;
+    border-radius: 20px !important;
+    background: transparent !important;
+    border-color: white !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    position: relative;
+    left: 45%;
+    top: 80%;
+    background-color: transparent !important;
+    transition: background-color 0.5s ease !important;
+    animation-name: show;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.btn:hover {
+    background-color: #8ec63f !important;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.33;
+    }
+
+    75% {
+        opacity: 0.66;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
