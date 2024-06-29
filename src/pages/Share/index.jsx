@@ -1,8 +1,10 @@
 import React from "react";
 import "./index.css"
+import Header from "../../components/Header";
 function Share() {
   return (
     <>
+    <Header />
       <div class="container" id="con">
         <div class="item">
           <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.mH9YLFEL5YdVxJM82mjVJQAAAA?rs=1&pid=ImgDetMain" alt="" />
