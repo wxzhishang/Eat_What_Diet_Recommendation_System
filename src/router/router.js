@@ -3,9 +3,11 @@ import { Spin } from "antd";
 
 const Home = lazy(() => import('../pages/Home/index'));
 const Login = lazy(() => import('../pages/Login/index'));
-const Register = lazy(() => import('../pages/Register/index'))
-const Query = lazy(() => import('../pages/Query/index'))
-const Share = lazy(()=> import('../pages/Share/index'))
+const Register = lazy(() => import('../pages/Register/index'));
+const Query = lazy(() => import('../pages/Query/index'));
+const Share = lazy(() => import('../pages/Share/index'));
+const Center = lazy(() => import('../pages/Center/index'));
+
 const Routes = [
     {
         path: '/home',
@@ -46,6 +48,15 @@ const Routes = [
             name: 'share'
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Share></Share></Suspense>
+    },
+    {
+        path: '/center',
+        meta: {
+            title: '个人中心',
+            name: 'center'
+        },
+        element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Center /></Suspense>
+
     }
 ]
 
