@@ -1,0 +1,16 @@
+/* 标题 */
+.about-title{
+    width: 100%;
+    background-color: pink;
+}
+.contact-phone{
+    width: 100%;
+    background-color: skyblue;
+}
+.phone-num-line{
+    text-align: center;
+    font-size: 30px;
+}
+.line-ch{
+    margin-right: 100px;
+}

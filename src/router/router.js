@@ -7,6 +7,7 @@ const Register = lazy(() => import('../pages/Register/index'));
 const Query = lazy(() => import('../pages/Query/index'));
 const Share = lazy(() => import('../pages/Share/index'));
 const Center = lazy(() => import('../pages/Center/index'));
+const About = lazy(() => import('../pages/About/index'));
 
 const Search = lazy(() => import('../pages/Query/Search/index'))
 
@@ -67,7 +68,16 @@ const Routes = [
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Center /></Suspense>
 
-    }
+    },
+    {
+        path: '/about',
+        meta: {
+            title: '个人中心',
+            name: 'about'
+        },
+        element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><About /></Suspense>
+
+    },
 ]
 
 export default Routes;

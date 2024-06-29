@@ -19,7 +19,7 @@ function Login() {
     }
     return (
         <>
-            <div className="body">
+            <div className="login_body">
                 <div className='body_left'>
                     <div style={{ marginBottom: '20px', fontSize: '18px' }}>账号登录</div>
                     <Form
