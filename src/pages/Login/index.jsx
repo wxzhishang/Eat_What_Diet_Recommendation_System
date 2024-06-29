@@ -13,6 +13,10 @@ function Login() {
     const toRegister = () => {
         navigate('/register')
     }
+    // 跳转主界面
+    const toMain = ()=>{
+        navigate('/home')
+    }
     return (
         <>
             <div className="body">
@@ -62,7 +66,7 @@ function Login() {
                         </Form.Item>
 
                         <Form.Item>
-                            <Button type="primary" htmlType="submit" className="login-form-button">
+                            <Button type="primary" htmlType="submit" className="login-form-button" onClick={toMain}>
                                 登录
                             </Button>
                         </Form.Item>

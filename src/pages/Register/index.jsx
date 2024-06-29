@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css"
 import { Input } from '@douyinfe/semi-ui';
-import { Button } from '@douyinfe/semi-ui';
 function Home() {
     return (
         <>

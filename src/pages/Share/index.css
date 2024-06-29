@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* 需要指定高度 */
+    height: 1500px;
+}
+.item{
+    width: 25%;
+    margin: 5px;
+}
+
+.item img{
+    width: 100%;
+}
