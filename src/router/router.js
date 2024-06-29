@@ -8,6 +8,8 @@ const Query = lazy(() => import('../pages/Query/index'));
 const Share = lazy(() => import('../pages/Share/index'));
 const Center = lazy(() => import('../pages/Center/index'));
 
+const Search = lazy(() => import('../pages/Query/Search/index'))
+
 const Routes = [
     {
         path: '/home',
@@ -48,6 +50,14 @@ const Routes = [
             name: 'share'
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Share></Share></Suspense>
+    },
+    {
+        path: '/query/search',
+        meta: {
+            title: '查询',
+            name: 'search'
+        },
+        element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Search /></Suspense>
     },
     {
         path: '/center',
