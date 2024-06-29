@@ -1,13 +1,18 @@
 import React from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import './index.css'
 
 
 function Login() {
+    const navigate = useNavigate();
     const onFinish = (values) => {
         console.log('Received values of form: ', values);
     };
+    const toRegister = () => {
+        navigate('/register')
+    }
     return (
         <>
             <div className="body">
@@ -51,8 +56,8 @@ function Login() {
                             <Form.Item name="remember" valuePropName="checked" noStyle>
                                 <Checkbox>记住密码</Checkbox>
                             </Form.Item>
-                            <a className="login-form-forgot" href="">
-                                忘记密码
+                            <a className="login-form-forgot" onClick={toRegister}>
+                                注册新用户
                             </a>
                         </Form.Item>
 
@@ -60,7 +65,6 @@ function Login() {
                             <Button type="primary" htmlType="submit" className="login-form-button">
                                 登录
                             </Button>
-                            <a href="">注册</a>
                         </Form.Item>
                     </Form>
                 </div>

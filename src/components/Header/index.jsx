@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu } from "antd";
+import { Menu, Button } from "antd";
 import { useNavigate } from "react-router-dom"
 
 const items = [
@@ -16,7 +16,7 @@ const items = [
         key: "share",
     },
     {
-        label: "关于我们",
+        label: "联系我们",
         key: "about",
     },
     {
@@ -34,10 +34,10 @@ function Header() {
     }
     return (
         <div style={{ display: 'flex', backgroundColor: 'transparent' }}>
-            <div style={{ width: '60%', textAlign: 'center' }}>
-                <img src="D:/Diet-recommendation/diet-recommendation/src/assets/logo.png" />
+            <div style={{ width: '40%', textAlign: 'center', height: '50px' }}>
+                <img src="http://sfs87naca.hn-bkt.clouddn.com/logo/logo-white.png" style={{ width: '80px', height: '60px' }} />
             </div>
-            <Menu style={{ border: 'none', width: '40%' }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <Menu style={{ border: 'none', width: '30%' }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         </div>
     )
 }

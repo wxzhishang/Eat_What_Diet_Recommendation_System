@@ -3,7 +3,7 @@ import { Spin } from "antd";
 
 const Home = lazy(() => import('../pages/Home/index'));
 const Login = lazy(() => import('../pages/Login/index'));
-const Register = lazy(()=>import('../pages/Register/index'))
+const Register = lazy(() => import('../pages/Register/index'))
 
 const Routes = [
     {
@@ -15,7 +15,7 @@ const Routes = [
         element: <Suspense fallback={<Spin tip="Loading" size="large"></Spin>}><Home /></Suspense>
     },
     {
-        path: '/login',
+        path: '/',
         meta: {
             title: '登录',
             name: 'login'
@@ -23,10 +23,10 @@ const Routes = [
         element: <Suspense fallback={<Spin tip="Loading" size="large"></Spin>}><Login /></Suspense>
     },
     {
-        path:'/register',
-        meta:{
-            title:'注册',
-            name:'register'
+        path: '/register',
+        meta: {
+            title: '注册',
+            name: 'register'
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Register></Register></Suspense>
     }
