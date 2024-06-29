@@ -37,7 +37,7 @@ function Header() {
             <div style={{ width: '40%', textAlign: 'center', height: '50px' }}>
                 <img src="http://sfs87naca.hn-bkt.clouddn.com/logo/logo-white.png" style={{ width: '80px', height: '60px' }} />
             </div>
-            <Menu style={{ border: 'none', width: '30%' }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <Menu style={{ border: 'none', width: '40%' }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         </div>
     )
 }

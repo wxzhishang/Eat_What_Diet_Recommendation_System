@@ -4,6 +4,7 @@ import { Spin } from "antd";
 const Home = lazy(() => import('../pages/Home/index'));
 const Login = lazy(() => import('../pages/Login/index'));
 const Register = lazy(() => import('../pages/Register/index'))
+const Query = lazy(() => import('../pages/Query/index'))
 
 const Routes = [
     {
@@ -29,6 +30,14 @@ const Routes = [
             name: 'register'
         },
         element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Register></Register></Suspense>
+    },
+    {
+        path: '/query',
+        meta: {
+            title: '营养查询',
+            name: 'query'
+        },
+        element: <Suspense fallback={<Spin tip="Loading" size='large'></Spin>}><Query /></Suspense>
     }
 ]
 
