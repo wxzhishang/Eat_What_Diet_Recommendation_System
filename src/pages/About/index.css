@@ -1,16 +1,63 @@
 /* 标题 */
 .about-title{
     width: 100%;
-    background-color: pink;
+    /* background-color: #f0f1f4; */
 }
 .contact-phone{
     width: 100%;
-    background-color: skyblue;
+    /* background-color: #f0f1f4; */
 }
 .phone-num-line{
-    text-align: center;
+    margin-left: 520px;
     font-size: 30px;
 }
 .line-ch{
     margin-right: 100px;
+}
+/* 大盒子 */
+.about-contain{
+    margin: auto;
+    width: 1600px;
+    background-color: #f7f6f3;
+}
+/* 主体 */
+.about-main{
+    padding: 0 100px;
+}
+/* 图片 */
+.about-img{
+    width: 60px;
+    height: 40px;
+}
+/* span */
+.about-span{
+    font-size: 26px;
+    position: relative;
+    top: -10px;
+    line-height: 40px;
+    /* background-color: pink; */
+}
+.about-map-title{
+    height: 40px;
+    line-height: 40px;
+}
+/* 小盒子 */
+.about-map-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+}
+/* 左 */
+.about-box-left{
+    margin: auto;
+    width: 50%;
+}
+/* 右 */
+.about-box-right{
+    margin: auto;
+    width: 50%;
+}
+.about-box-p{
+    font-size: 20px;
+    text-align: left;
 }
